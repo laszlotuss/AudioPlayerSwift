@@ -14,6 +14,14 @@
 		57E4354423BCB582009F83E0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E4354323BCB582009F83E0 /* InterfaceController.swift */; };
 		57E4354623BCB582009F83E0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E4354523BCB582009F83E0 /* ExtensionDelegate.swift */; };
 		57E4354A23BCB582009F83E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57E4354923BCB582009F83E0 /* Assets.xcassets */; };
+		57E4355E23BD1572009F83E0 /* AudioPlayerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B205C81F39F73C0078339E /* AudioPlayerSwift.framework */; };
+		57E4355F23BD1572009F83E0 /* AudioPlayerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E2B205C81F39F73C0078339E /* AudioPlayerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		57E4356723BD1B21009F83E0 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420351D2002740093DD66 /* sound1.caf */; };
+		57E4356823BD1B21009F83E0 /* sound2.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420361D2002740093DD66 /* sound2.caf */; };
+		57E4356923BD1B21009F83E0 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420351D2002740093DD66 /* sound1.caf */; };
+		57E4356A23BD1B22009F83E0 /* sound2.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420361D2002740093DD66 /* sound2.caf */; };
+		57E4356B23BD1B22009F83E0 /* sound1.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420351D2002740093DD66 /* sound1.caf */; };
+		57E4356C23BD1B22009F83E0 /* sound2.caf in Resources */ = {isa = PBXBuildFile; fileRef = E23420361D2002740093DD66 /* sound2.caf */; };
 		E21882091D1FF76200218B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21882081D1FF76200218B74 /* AppDelegate.swift */; };
 		E218820B1D1FF76200218B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E218820A1D1FF76200218B74 /* Assets.xcassets */; };
 		E21882301D1FF79C00218B74 /* ViewControllerMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E218822F1D1FF79C00218B74 /* ViewControllerMacOS.swift */; };
@@ -54,6 +62,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 57E4353D23BCB582009F83E0;
 			remoteInfo = "watchOS Example WatchKit Extension";
+		};
+		57E4356123BD15EF009F83E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E28C03801D1FF0DC00FECBF2 /* AudioPlayerSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E9289CEF329E014CACA2B4C;
+			remoteInfo = AudioPlayerSwift;
 		};
 		E2B205C71F39F73C0078339E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -113,6 +128,17 @@
 				57E4353F23BCB582009F83E0 /* watchOS Example WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E4356023BD1572009F83E0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				57E4355F23BD1572009F83E0 /* AudioPlayerSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E2AF55D11D5E5640003CD574 /* Embed Frameworks */ = {
@@ -187,6 +213,14 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		57E4353B23BCB582009F83E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E4355E23BD1572009F83E0 /* AudioPlayerSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57E4355C23BD1566009F83E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -366,6 +400,7 @@
 			buildPhases = (
 				57E4352D23BCB57F009F83E0 /* Resources */,
 				57E4355223BCB582009F83E0 /* Embed App Extensions */,
+				57E4355C23BD1566009F83E0 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,10 +419,12 @@
 				57E4353A23BCB582009F83E0 /* Sources */,
 				57E4353B23BCB582009F83E0 /* Frameworks */,
 				57E4353C23BCB582009F83E0 /* Resources */,
+				57E4356023BD1572009F83E0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				57E4356223BD15EF009F83E0 /* PBXTargetDependency */,
 			);
 			name = "watchOS Example WatchKit Extension";
 			productName = "watchOS Example WatchKit Extension";
@@ -546,6 +583,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E4356B23BD1B22009F83E0 /* sound1.caf in Resources */,
+				57E4356C23BD1B22009F83E0 /* sound2.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +593,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				57E4353823BCB582009F83E0 /* Assets.xcassets in Resources */,
+				57E4356823BD1B21009F83E0 /* sound2.caf in Resources */,
+				57E4356723BD1B21009F83E0 /* sound1.caf in Resources */,
 				57E4353623BCB57F009F83E0 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,6 +603,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E4356A23BD1B22009F83E0 /* sound2.caf in Resources */,
+				57E4356923BD1B21009F83E0 /* sound1.caf in Resources */,
 				57E4354A23BCB582009F83E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,7 +671,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint --config ../.swiftlint.yml\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint --config ../.swiftlint.yml\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		E27C4AEA1D6791C4004FFBA4 /* Run Script -  🤖 SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -695,6 +738,11 @@
 			isa = PBXTargetDependency;
 			target = 57E4353D23BCB582009F83E0 /* watchOS Example WatchKit Extension */;
 			targetProxy = 57E4354023BCB582009F83E0 /* PBXContainerItemProxy */;
+		};
+		57E4356223BD15EF009F83E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioPlayerSwift;
+			targetProxy = 57E4356123BD15EF009F83E0 /* PBXContainerItemProxy */;
 		};
 		E2B205CE1F39F7520078339E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -815,6 +863,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = watchOS_Example_WatchKit_Extension;
 				INFOPLIST_FILE = "watchOS Example/WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayer-Sample.watchkitapp";
@@ -843,6 +892,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = watchOS_Example_WatchKit_Extension;
 				INFOPLIST_FILE = "watchOS Example/WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayer-Sample.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -868,7 +918,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "watchOS Example/WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayer-Sample.watchkitapp.watchkitextension";
@@ -895,7 +945,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "watchOS Example/WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../Frameworks @executable_path/../../Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tbaranes.AudioPlayer-Sample.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
