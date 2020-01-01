@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1130"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E2A9AF9B1C498E2900FE943A"
-               BuildableName = "AudioPlayer.app"
-               BlueprintName = "iOS Example"
+               BlueprintIdentifier = "57E4352E23BCB57F009F83E0"
+               BuildableName = "watchOS Example WatchKit App.app"
+               BlueprintName = "watchOS Example WatchKit App"
+               ReferencedContainer = "container:Examples.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "57E4352B23BCB57F009F83E0"
+               BuildableName = "watchOS Example.app"
+               BlueprintName = "watchOS Example"
                ReferencedContainer = "container:Examples.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,15 +41,6 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2A9AF9B1C498E2900FE943A"
-            BuildableName = "AudioPlayer.app"
-            BlueprintName = "iOS Example"
-            ReferencedContainer = "container:Examples.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <Testables>
       </Testables>
    </TestAction>
@@ -48,17 +53,20 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      allowLocationSimulation = "YES"
+      notificationPayloadFile = "watchOS Example/WatchKit Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/watchOS Example WatchKit App">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2A9AF9B1C498E2900FE943A"
-            BuildableName = "AudioPlayer.app"
-            BlueprintName = "iOS Example"
+            BlueprintIdentifier = "57E4352E23BCB57F009F83E0"
+            BuildableName = "watchOS Example WatchKit App.app"
+            BlueprintName = "watchOS Example WatchKit App"
             ReferencedContainer = "container:Examples.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -66,16 +74,27 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/watchOS Example WatchKit App">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2A9AF9B1C498E2900FE943A"
-            BuildableName = "AudioPlayer.app"
-            BlueprintName = "iOS Example"
+            BlueprintIdentifier = "57E4352E23BCB57F009F83E0"
+            BuildableName = "watchOS Example WatchKit App.app"
+            BlueprintName = "watchOS Example WatchKit App"
             ReferencedContainer = "container:Examples.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "57E4352E23BCB57F009F83E0"
+            BuildableName = "watchOS Example WatchKit App.app"
+            BlueprintName = "watchOS Example WatchKit App"
+            ReferencedContainer = "container:Examples.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
